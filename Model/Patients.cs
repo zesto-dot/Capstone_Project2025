@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace capstone_project.Model
 {
@@ -47,9 +48,11 @@ namespace capstone_project.Model
         {
             Controller.Service.ShowUC(new View.ucPatient(), p);
         }
-        public static void Load(DataGridView d)
+        public static void Load(DataGridView d,Guna2TextBox t)
         {
-            var dt = Controller.MySQL.Pull("SELECT * FROM `v.patients`") as IDisposable;
+
+            string searchstring = Controller.Service.EscapeQuote(t.Text);
+            var dt = Controller.MySQL.Pull("SELECT * FROM `v.patients` where FullName like '%" +searchstring + "%'") as IDisposable;
             d.DataSource = dt;
             dt.Dispose();
             FixGrid(d);
@@ -112,10 +115,10 @@ namespace capstone_project.Model
                 Controller.Service.ShowForm(new View.frmAddEdit(true));
             }
         }
-        public static void Delete(DataGridView d)
+        public static void Delete(DataGridView d, Guna2TextBox t)
         {
             Controller.MySQL.Push("delete from patients where ID =" + ID + "");
-            Load(d);
+            Load(d, t);
         }
 
         public static void Save()

@@ -24,6 +24,11 @@ namespace capstone_project.Controller
             Form frm = x;
             x.ShowDialog();
         }
-       
+
+        public static string EscapeQuote(string msdata)
+        {
+            return msdata.Replace("'", "''");
+        }
+
     }
 }

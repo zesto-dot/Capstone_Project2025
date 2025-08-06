@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace capstone_project.View
+namespace capstone_project.View.Doctors
 {
-    public partial class frmServices : Form
+    public partial class ucDoctors : UserControl
     {
-        public frmServices()
+        public ucDoctors()
         {
             InitializeComponent();
+        }
+
+        private void ucDoctors_Load(object sender, EventArgs e)
+        {
+            Model.Doctors.Load(dgvDoctors);
         }
     }
 }

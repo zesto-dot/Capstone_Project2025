@@ -114,7 +114,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 44);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1062, 497);
+            this.guna2Panel1.Size = new System.Drawing.Size(1062, 492);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2VScrollBar1
@@ -123,12 +123,12 @@
             this.guna2VScrollBar1.BindingContainer = this.guna2Panel2;
             this.guna2VScrollBar1.BorderRadius = 8;
             this.guna2VScrollBar1.InUpdate = false;
-            this.guna2VScrollBar1.LargeChange = 497;
+            this.guna2VScrollBar1.LargeChange = 492;
             this.guna2VScrollBar1.Location = new System.Drawing.Point(1044, 0);
             this.guna2VScrollBar1.Maximum = 687;
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.ScrollbarSize = 18;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 497);
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 492);
             this.guna2VScrollBar1.SmallChange = 5;
             this.guna2VScrollBar1.TabIndex = 110;
             this.guna2VScrollBar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
@@ -138,7 +138,7 @@
             this.guna2Panel2.AutoRoundedCorners = true;
             this.guna2Panel2.AutoScroll = true;
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.BorderRadius = 247;
+            this.guna2Panel2.BorderRadius = 245;
             this.guna2Panel2.BorderThickness = 2;
             this.guna2Panel2.Controls.Add(this.txtMember);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
@@ -197,7 +197,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1062, 497);
+            this.guna2Panel2.Size = new System.Drawing.Size(1062, 492);
             this.guna2Panel2.TabIndex = 52;
             // 
             // txtMember
@@ -211,8 +211,9 @@
             this.txtMember.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMember.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMember.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMember.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMember.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMember.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtMember.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMember.ForeColor = System.Drawing.Color.Black;
             this.txtMember.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMember.Location = new System.Drawing.Point(552, 576);
             this.txtMember.Name = "txtMember";
@@ -239,8 +240,9 @@
             this.txtPhilhealthNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPhilhealthNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhilhealthNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhilhealthNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhilhealthNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhilhealthNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtPhilhealthNo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhilhealthNo.ForeColor = System.Drawing.Color.Black;
             this.txtPhilhealthNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhilhealthNo.Location = new System.Drawing.Point(552, 480);
             this.txtPhilhealthNo.Name = "txtPhilhealthNo";
@@ -260,8 +262,9 @@
             this.txtHouseholdNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtHouseholdNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtHouseholdNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHouseholdNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHouseholdNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHouseholdNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtHouseholdNo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHouseholdNo.ForeColor = System.Drawing.Color.Black;
             this.txtHouseholdNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHouseholdNo.Location = new System.Drawing.Point(186, 528);
             this.txtHouseholdNo.Name = "txtHouseholdNo";
@@ -281,8 +284,9 @@
             this.txtFacilityHouseHoldNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtFacilityHouseHoldNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFacilityHouseHoldNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFacilityHouseHoldNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFacilityHouseHoldNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFacilityHouseHoldNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtFacilityHouseHoldNo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFacilityHouseHoldNo.ForeColor = System.Drawing.Color.Black;
             this.txtFacilityHouseHoldNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFacilityHouseHoldNo.Location = new System.Drawing.Point(186, 480);
             this.txtFacilityHouseHoldNo.Name = "txtFacilityHouseHoldNo";
@@ -317,10 +321,10 @@
             this.cmbStatusType.DisplayMember = "Educational Attainment:";
             this.cmbStatusType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbStatusType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatusType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbStatusType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbStatusType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbStatusType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbStatusType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbStatusType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbStatusType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbStatusType.ForeColor = System.Drawing.Color.Black;
             this.cmbStatusType.ItemHeight = 30;
             this.cmbStatusType.Items.AddRange(new object[] {
             "Member",
@@ -351,8 +355,9 @@
             this.txtContactnumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtContactnumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtContactnumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtContactnumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContactnumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContactnumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtContactnumber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactnumber.ForeColor = System.Drawing.Color.Black;
             this.txtContactnumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContactnumber.Location = new System.Drawing.Point(822, 254);
             this.txtContactnumber.Name = "txtContactnumber";
@@ -412,10 +417,12 @@
             this.txtResidentialAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtResidentialAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtResidentialAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtResidentialAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtResidentialAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtResidentialAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtResidentialAddress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResidentialAddress.ForeColor = System.Drawing.Color.Black;
             this.txtResidentialAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtResidentialAddress.Location = new System.Drawing.Point(822, 156);
+            this.txtResidentialAddress.Multiline = true;
             this.txtResidentialAddress.Name = "txtResidentialAddress";
             this.txtResidentialAddress.PlaceholderText = "";
             this.txtResidentialAddress.SelectedText = "";
@@ -491,10 +498,10 @@
             this.cmbFamilyPosition.DisplayMember = "Educational Attainment:";
             this.cmbFamilyPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbFamilyPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFamilyPosition.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbFamilyPosition.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbFamilyPosition.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbFamilyPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbFamilyPosition.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbFamilyPosition.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbFamilyPosition.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbFamilyPosition.ForeColor = System.Drawing.Color.Black;
             this.cmbFamilyPosition.ItemHeight = 30;
             this.cmbFamilyPosition.Items.AddRange(new object[] {
             "Father",
@@ -525,13 +532,12 @@
             this.cmbEmploymentStatus.DisplayMember = "Educational Attainment:";
             this.cmbEmploymentStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEmploymentStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEmploymentStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbEmploymentStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbEmploymentStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbEmploymentStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbEmploymentStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbEmploymentStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbEmploymentStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbEmploymentStatus.ForeColor = System.Drawing.Color.Black;
             this.cmbEmploymentStatus.ItemHeight = 30;
             this.cmbEmploymentStatus.Items.AddRange(new object[] {
-            "Select Employment Status:",
             "None",
             "Student",
             "Employed",
@@ -572,8 +578,9 @@
             this.txtSpousename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSpousename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSpousename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSpousename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSpousename.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSpousename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtSpousename.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtSpousename.ForeColor = System.Drawing.Color.Black;
             this.txtSpousename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSpousename.Location = new System.Drawing.Point(499, 212);
             this.txtSpousename.Name = "txtSpousename";
@@ -601,15 +608,20 @@
             this.cmbBloodtype.BorderThickness = 2;
             this.cmbBloodtype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbBloodtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBloodtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbBloodtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbBloodtype.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbBloodtype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbBloodtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbBloodtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbBloodtype.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbBloodtype.ForeColor = System.Drawing.Color.Black;
             this.cmbBloodtype.ItemHeight = 30;
             this.cmbBloodtype.Items.AddRange(new object[] {
-            "Select Sex:",
-            "Male",
-            "Female"});
+            "A+",
+            "A−",
+            "B+",
+            "B−",
+            "AB+",
+            "AB−",
+            "O+",
+            "O-"});
             this.cmbBloodtype.Location = new System.Drawing.Point(499, 107);
             this.cmbBloodtype.Name = "cmbBloodtype";
             this.cmbBloodtype.Size = new System.Drawing.Size(171, 36);
@@ -624,13 +636,13 @@
             this.cmbEducationalAttainment.DisplayMember = "Educational Attainment:";
             this.cmbEducationalAttainment.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEducationalAttainment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEducationalAttainment.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbEducationalAttainment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbEducationalAttainment.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbEducationalAttainment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbEducationalAttainment.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbEducationalAttainment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbEducationalAttainment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbEducationalAttainment.ForeColor = System.Drawing.Color.Black;
             this.cmbEducationalAttainment.ItemHeight = 30;
             this.cmbEducationalAttainment.Items.AddRange(new object[] {
-            "Educational Attainment:",
+            "Select:",
             "No Formal Education",
             "Elementary",
             "High School",
@@ -650,13 +662,12 @@
             this.cmbCivilstatus.BorderThickness = 2;
             this.cmbCivilstatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbCivilstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCivilstatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCivilstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCivilstatus.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCivilstatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbCivilstatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbCivilstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbCivilstatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbCivilstatus.ForeColor = System.Drawing.Color.Black;
             this.cmbCivilstatus.ItemHeight = 30;
             this.cmbCivilstatus.Items.AddRange(new object[] {
-            "Civil Status:",
             "Single",
             "Married",
             "Annulled",
@@ -678,7 +689,7 @@
             this.dtpBirthdate.CheckedState.FillColor = System.Drawing.Color.White;
             this.dtpBirthdate.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.dtpBirthdate.FillColor = System.Drawing.Color.White;
-            this.dtpBirthdate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpBirthdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthdate.ForeColor = System.Drawing.Color.Black;
             this.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBirthdate.Location = new System.Drawing.Point(146, 322);
@@ -697,13 +708,12 @@
             this.cmbSex.BorderThickness = 2;
             this.cmbSex.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSex.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbSex.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSex.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSex.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbSex.ForeColor = System.Drawing.Color.Black;
             this.cmbSex.ItemHeight = 30;
             this.cmbSex.Items.AddRange(new object[] {
-            "Select Sex:",
             "Male",
             "Female"});
             this.cmbSex.Location = new System.Drawing.Point(146, 269);
@@ -753,8 +763,9 @@
             this.txtSuffix.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSuffix.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSuffix.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSuffix.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSuffix.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSuffix.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtSuffix.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSuffix.ForeColor = System.Drawing.Color.Black;
             this.txtSuffix.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSuffix.Location = new System.Drawing.Point(146, 219);
             this.txtSuffix.Name = "txtSuffix";
@@ -784,8 +795,9 @@
             this.txtMothername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMothername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMothername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMothername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMothername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMothername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtMothername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMothername.ForeColor = System.Drawing.Color.Black;
             this.txtMothername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMothername.Location = new System.Drawing.Point(822, 107);
             this.txtMothername.Name = "txtMothername";
@@ -815,8 +827,9 @@
             this.txtBirthplace.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtBirthplace.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBirthplace.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBirthplace.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBirthplace.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBirthplace.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtBirthplace.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBirthplace.ForeColor = System.Drawing.Color.Black;
             this.txtBirthplace.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBirthplace.Location = new System.Drawing.Point(499, 59);
             this.txtBirthplace.Name = "txtBirthplace";
@@ -846,8 +859,9 @@
             this.TxtMiddlename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtMiddlename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TxtMiddlename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtMiddlename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtMiddlename.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TxtMiddlename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.TxtMiddlename.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMiddlename.ForeColor = System.Drawing.Color.Black;
             this.TxtMiddlename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TxtMiddlename.Location = new System.Drawing.Point(146, 167);
             this.TxtMiddlename.Name = "TxtMiddlename";
@@ -927,8 +941,9 @@
             this.txtFirstname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtFirstname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFirstname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFirstname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtFirstname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.txtFirstname.ForeColor = System.Drawing.Color.Black;
             this.txtFirstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFirstname.Location = new System.Drawing.Point(146, 61);
             this.txtFirstname.Name = "txtFirstname";
@@ -948,8 +963,9 @@
             this.txtLastname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtLastname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLastname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLastname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtLastname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastname.ForeColor = System.Drawing.Color.Black;
             this.txtLastname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastname.Location = new System.Drawing.Point(146, 114);
             this.txtLastname.Name = "txtLastname";
@@ -1195,7 +1211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(1062, 541);
+            this.ClientSize = new System.Drawing.Size(1062, 536);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.guna2Panel1);

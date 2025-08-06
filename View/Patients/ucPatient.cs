@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace capstone_project.View
 {
     public partial class ucPatient : UserControl
@@ -19,13 +20,13 @@ namespace capstone_project.View
 
         private void ucPatient_Load(object sender, EventArgs e)
         {
-            Model.Patients.Load(dgvPatient);
+            Model.Patients.Load(dgvPatient,txtFind);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Model.Patients.Add();
-            Model.Patients.Load(dgvPatient);
+            Model.Patients.Load(dgvPatient,txtFind);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -33,15 +34,20 @@ namespace capstone_project.View
             if ((MessageBox.Show("Do you really want to delete this item?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) && (dgvPatient.RowCount > 0))
             {
                 Model.Patients.ID = Convert.ToInt32(dgvPatient.CurrentRow.Cells[0].Value);
-                Model.Patients.Delete(dgvPatient);
+                Model.Patients.Delete(dgvPatient,txtFind);
             }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Model.Patients.Edit(dgvPatient);
-            Model.Patients.Load(dgvPatient);
+            Model.Patients.Load(dgvPatient,txtFind);
 
+        }
+
+        private void txtFind_TextChanged(object sender, EventArgs e)
+        {
+            Model.Patients.Load(dgvPatient, txtFind);
         }
     }
 }

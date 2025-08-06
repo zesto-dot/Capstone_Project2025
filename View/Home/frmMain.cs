@@ -31,5 +31,10 @@ namespace capstone_project.View
         {
             Application.Exit();
         }
+
+        private void btnDoctors_Click(object sender, EventArgs e)
+        {
+            Model.Doctors.UI(guna2Panel1);
+        }
     }
 }
