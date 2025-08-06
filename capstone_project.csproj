@@ -129,12 +129,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="View\Patients\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Patients\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Patients\frmAddEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,9 +175,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Patients\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Patients\frmAddEdit.resx">
       <DependentUpon>frmAddEdit.cs</DependentUpon>

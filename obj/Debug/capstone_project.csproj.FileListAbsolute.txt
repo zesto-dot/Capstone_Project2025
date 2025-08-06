@@ -49,6 +49,5 @@ C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.frmL
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.frmAddEdit.resources
 C:\Users\Djit\source\repos\capstone_project\bin\Debug\DevComponents.DotNetBar.Schedule.dll
 C:\Users\Djit\source\repos\capstone_project\bin\Debug\DevComponents.DotNetBar.Schedule.xml
-C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Patients.Form1.resources
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.ucPatient.resources
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Patients.ucViewPatient.resources
