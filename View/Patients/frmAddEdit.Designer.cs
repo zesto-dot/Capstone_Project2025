@@ -95,7 +95,7 @@
             this.rb4PSyes = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rb4PSno = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblText = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -1172,15 +1172,15 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(58, 44);
             this.guna2ControlBox1.TabIndex = 27;
             // 
-            // label14
+            // lblText
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(3, 7);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(130, 30);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Add Patient";
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+            this.lblText.Location = new System.Drawing.Point(3, 7);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(130, 30);
+            this.lblText.TabIndex = 26;
+            this.lblText.Text = "Add Patient";
             // 
             // guna2BorderlessForm1
             // 
@@ -1197,7 +1197,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(1062, 541);
             this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lblText);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEdit";
@@ -1223,7 +1223,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblText;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;

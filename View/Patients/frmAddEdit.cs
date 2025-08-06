@@ -45,7 +45,9 @@ namespace capstone_project.View
                 txtPhilhealthNo.Text = Model.Patients.PhilHealthNo;
                 txtMember.Text = Model.Patients.IfMember;
                 rbPCByes.Checked = Model.Patients.PcbMember;
+                lblText.Text = "Edit Patient";
             }
+          
         }
 
         private void btnSave_Click(object sender, EventArgs e)
