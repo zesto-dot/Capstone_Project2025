@@ -21,6 +21,7 @@ namespace capstone_project.View
         private void ucPatient_Load(object sender, EventArgs e)
         {
             Model.Patients.Load(dgvPatient,txtFind);
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -31,9 +32,9 @@ namespace capstone_project.View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if ((MessageBox.Show("Do you really want to delete this item?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) && (dgvPatient.RowCount > 0))
+            if ((MessageBox.Show("Do you really want to delete this record?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) && (dgvPatient.RowCount > 0))
             {
-                Model.Patients.ID = Convert.ToInt32(dgvPatient.CurrentRow.Cells[0].Value);
+                Model.Patients.ID = Convert.ToInt32(dgvPatient.CurrentRow.Cells[2].Value);
                 Model.Patients.Delete(dgvPatient,txtFind);
             }
         }
@@ -48,6 +49,27 @@ namespace capstone_project.View
         private void txtFind_TextChanged(object sender, EventArgs e)
         {
             Model.Patients.Load(dgvPatient, txtFind);
+        }
+
+        private void dgvPatient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (dgvPatient.Columns[e.ColumnIndex].Name == "ViewButton")
+                {
+                    Model.Patients.View(dgvPatient,this.Parent as Panel);
+                }
+                else if (dgvPatient.Columns[e.ColumnIndex].Name == "DeleteButton")
+                {
+                    if (MessageBox.Show("Do you really want to delete this Record?", "Delete",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        Model.Patients.ID = Convert.ToInt32(dgvPatient.CurrentRow.Cells[2].Value);
+                        Model.Patients.Delete(dgvPatient, txtFind);
+                    }
+                }
+            }
+
         }
     }
 }

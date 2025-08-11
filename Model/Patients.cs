@@ -48,6 +48,8 @@ namespace capstone_project.Model
         {
             Controller.Service.ShowUC(new View.ucPatient(), p);
         }
+
+       
         public static void Load(DataGridView d,Guna2TextBox t)
         {
 
@@ -56,19 +58,21 @@ namespace capstone_project.Model
             d.DataSource = dt;
             dt.Dispose();
             FixGrid(d);
+            
         }
         public static void FixGrid(DataGridView d)
         {
-            d.Columns[0].Visible = false;
-            d.Columns[1].HeaderText = "Full Name";
-            d.Columns[2].HeaderText = "Sex";
-            d.Columns[3].HeaderText = "Birth Date";
-            d.Columns[4].HeaderText = "Blood Type";
-            d.Columns[5].HeaderText = "Address";
-            d.Columns[6].HeaderText = "Contact Number";
-            d.Columns[7].HeaderText = "Created_At";
-            
+            d.Columns[2].Visible = false;
+            d.Columns[3].HeaderText = "Full Name";
+            d.Columns[4].HeaderText = "Sex";
+            d.Columns[5].HeaderText = "Age";
+            d.Columns[6].HeaderText = "Blood Type";
+            d.Columns[7].HeaderText = "Address";
+            d.Columns[8].HeaderText = "Contact Number";
+            d.Columns[9].HeaderText = "Created_At";
+
         }
+
         public static void Add()
         {
             Controller.Service.ShowForm(new View.frmAddEdit());
@@ -78,7 +82,7 @@ namespace capstone_project.Model
         {
             if (d.CurrentRow != null)
             {
-                ID = Convert.ToInt32(d.CurrentRow.Cells[0].Value);
+                ID = Convert.ToInt32(d.CurrentRow.Cells[2].Value);
 
                 DataTable dt = Controller.MySQL.Pull("SELECT * FROM patients WHERE ID = " + ID);
                 if (dt.Rows.Count > 0)
@@ -114,6 +118,58 @@ namespace capstone_project.Model
 
                 Controller.Service.ShowForm(new View.frmAddEdit(true));
             }
+        }
+        public static void View(DataGridView d, Panel p)
+        {
+            if (d.CurrentRow != null)
+            {
+                ID = Convert.ToInt32(d.CurrentRow.Cells[2].Value);
+
+                DataTable dt = Controller.MySQL.Pull("SELECT * FROM patients WHERE ID = " + ID);
+                if (dt.Rows.Count > 0)
+                {
+                    
+                    var r = dt.Rows[0];
+                    Lname = r["Lname"].ToString();
+                    Fname = r["Fname"].ToString();
+                    Mname = r["Mname"].ToString();
+                    Suffix = r["Suffix"].ToString();
+                    Sex = r["Sex"].ToString();
+                    Birthdate = Convert.ToDateTime(r["Birthdate"]);
+                    Birthplace = r["Birthplace"].ToString();
+                    Bloodtype = r["Bloodtype"].ToString();
+                    Address = r["Address"].ToString();
+                    ContactNumber = r["ContactNumber"].ToString();
+                    CivilStatus = r["CivilStatus"].ToString();
+                    SpouseName = r["SpouseName"].ToString();
+                    MotherName = r["MotherName"].ToString();
+                    EducationalAttainment = r["EducationalAttainment"].ToString();
+                    EmploymentStatus = r["EmploymentStatus"].ToString();
+                    FamilyPosition = r["FamilyPosition"].ToString();
+                    Dswd_Nhts = Convert.ToBoolean(r["Dswd_Nhts"]);
+                    FacilityHouseHoldNo = r["FacilityHouseHoldNo"].ToString();
+                    FourPsMember = Convert.ToBoolean(r["FourPsMember"]);
+                    HouseHoldno = r["HouseHoldNo"].ToString();
+                    PhilHealthMember = Convert.ToBoolean(r["PhilHealthMember"]);
+                    PhilHealthType = r["PhilHealthType"].ToString();
+                    PhilHealthNo = r["PhilHealthNo"].ToString();
+                    IfMember = r["IfMember"].ToString();
+                    PcbMember = Convert.ToBoolean(r["PcbMember"]);
+                    Dswd_Nhts = Convert.ToBoolean(r["Dswd_Nhts"]);
+                    FacilityHouseHoldNo = r["FacilityHouseHoldNo"].ToString();
+                    FourPsMember = Convert.ToBoolean(r["FourPsMember"]);
+                    HouseHoldno = r["HouseHoldNo"].ToString();
+                    PhilHealthMember = Convert.ToBoolean(r["PhilHealthMember"]);
+                    PhilHealthType = r["PhilHealthType"].ToString();
+                    PhilHealthNo = r["PhilHealthNo"].ToString();
+                    IfMember = r["IfMember"].ToString();
+                    PcbMember = Convert.ToBoolean(r["PcbMember"]);
+
+                }
+
+                Controller.Service.ShowUC(new View.Patients.ucViewPatient(), p);
+            }
+
         }
         public static void Delete(DataGridView d, Guna2TextBox t)
         {

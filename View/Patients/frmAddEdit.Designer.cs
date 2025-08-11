@@ -32,6 +32,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cmbSuffix = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtMember = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtPhilhealthNo = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,13 +68,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtSuffix = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtMothername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtBirthplace = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.TxtMiddlename = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMiddlename = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -114,7 +114,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 44);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1062, 492);
+            this.guna2Panel1.Size = new System.Drawing.Size(1062, 626);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2VScrollBar1
@@ -123,12 +123,12 @@
             this.guna2VScrollBar1.BindingContainer = this.guna2Panel2;
             this.guna2VScrollBar1.BorderRadius = 8;
             this.guna2VScrollBar1.InUpdate = false;
-            this.guna2VScrollBar1.LargeChange = 492;
+            this.guna2VScrollBar1.LargeChange = 626;
             this.guna2VScrollBar1.Location = new System.Drawing.Point(1044, 0);
             this.guna2VScrollBar1.Maximum = 687;
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.ScrollbarSize = 18;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 492);
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 626);
             this.guna2VScrollBar1.SmallChange = 5;
             this.guna2VScrollBar1.TabIndex = 110;
             this.guna2VScrollBar1.ThumbStyle = Guna.UI2.WinForms.Enums.ThumbStyle.Inset;
@@ -138,8 +138,9 @@
             this.guna2Panel2.AutoRoundedCorners = true;
             this.guna2Panel2.AutoScroll = true;
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.BorderRadius = 245;
+            this.guna2Panel2.BorderRadius = 312;
             this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.cmbSuffix);
             this.guna2Panel2.Controls.Add(this.txtMember);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
             this.guna2Panel2.Controls.Add(this.txtPhilhealthNo);
@@ -175,13 +176,12 @@
             this.guna2Panel2.Controls.Add(this.label13);
             this.guna2Panel2.Controls.Add(this.label12);
             this.guna2Panel2.Controls.Add(this.label11);
-            this.guna2Panel2.Controls.Add(this.txtSuffix);
             this.guna2Panel2.Controls.Add(this.label10);
             this.guna2Panel2.Controls.Add(this.txtMothername);
             this.guna2Panel2.Controls.Add(this.label9);
             this.guna2Panel2.Controls.Add(this.txtBirthplace);
             this.guna2Panel2.Controls.Add(this.label8);
-            this.guna2Panel2.Controls.Add(this.TxtMiddlename);
+            this.guna2Panel2.Controls.Add(this.txtMiddlename);
             this.guna2Panel2.Controls.Add(this.label7);
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.Controls.Add(this.label5);
@@ -197,8 +197,30 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1062, 492);
+            this.guna2Panel2.Size = new System.Drawing.Size(1062, 626);
             this.guna2Panel2.TabIndex = 52;
+            // 
+            // cmbSuffix
+            // 
+            this.cmbSuffix.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSuffix.BorderColor = System.Drawing.Color.Black;
+            this.cmbSuffix.BorderRadius = 10;
+            this.cmbSuffix.BorderThickness = 2;
+            this.cmbSuffix.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSuffix.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSuffix.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSuffix.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSuffix.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbSuffix.ForeColor = System.Drawing.Color.Black;
+            this.cmbSuffix.ItemHeight = 30;
+            this.cmbSuffix.Items.AddRange(new object[] {
+            "Jr",
+            "Sr",
+            "III"});
+            this.cmbSuffix.Location = new System.Drawing.Point(146, 219);
+            this.cmbSuffix.Name = "cmbSuffix";
+            this.cmbSuffix.Size = new System.Drawing.Size(171, 36);
+            this.cmbSuffix.TabIndex = 3;
             // 
             // txtMember
             // 
@@ -642,7 +664,6 @@
             this.cmbEducationalAttainment.ForeColor = System.Drawing.Color.Black;
             this.cmbEducationalAttainment.ItemHeight = 30;
             this.cmbEducationalAttainment.Items.AddRange(new object[] {
-            "Select:",
             "No Formal Education",
             "Elementary",
             "High School",
@@ -752,28 +773,6 @@
             this.label11.TabIndex = 71;
             this.label11.Text = "Blood Type:";
             // 
-            // txtSuffix
-            // 
-            this.txtSuffix.BorderColor = System.Drawing.Color.Black;
-            this.txtSuffix.BorderRadius = 10;
-            this.txtSuffix.BorderThickness = 2;
-            this.txtSuffix.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSuffix.DefaultText = "";
-            this.txtSuffix.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSuffix.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSuffix.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSuffix.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSuffix.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.txtSuffix.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSuffix.ForeColor = System.Drawing.Color.Black;
-            this.txtSuffix.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSuffix.Location = new System.Drawing.Point(146, 219);
-            this.txtSuffix.Name = "txtSuffix";
-            this.txtSuffix.PlaceholderText = "";
-            this.txtSuffix.SelectedText = "";
-            this.txtSuffix.Size = new System.Drawing.Size(171, 36);
-            this.txtSuffix.TabIndex = 3;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -848,27 +847,27 @@
             this.label8.TabIndex = 67;
             this.label8.Text = "Birth Place:";
             // 
-            // TxtMiddlename
+            // txtMiddlename
             // 
-            this.TxtMiddlename.BorderColor = System.Drawing.Color.Black;
-            this.TxtMiddlename.BorderRadius = 10;
-            this.TxtMiddlename.BorderThickness = 2;
-            this.TxtMiddlename.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtMiddlename.DefaultText = "";
-            this.TxtMiddlename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtMiddlename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtMiddlename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtMiddlename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtMiddlename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.TxtMiddlename.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMiddlename.ForeColor = System.Drawing.Color.Black;
-            this.TxtMiddlename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtMiddlename.Location = new System.Drawing.Point(146, 167);
-            this.TxtMiddlename.Name = "TxtMiddlename";
-            this.TxtMiddlename.PlaceholderText = "";
-            this.TxtMiddlename.SelectedText = "";
-            this.TxtMiddlename.Size = new System.Drawing.Size(171, 36);
-            this.TxtMiddlename.TabIndex = 2;
+            this.txtMiddlename.BorderColor = System.Drawing.Color.Black;
+            this.txtMiddlename.BorderRadius = 10;
+            this.txtMiddlename.BorderThickness = 2;
+            this.txtMiddlename.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMiddlename.DefaultText = "";
+            this.txtMiddlename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMiddlename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMiddlename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMiddlename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMiddlename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtMiddlename.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddlename.ForeColor = System.Drawing.Color.Black;
+            this.txtMiddlename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMiddlename.Location = new System.Drawing.Point(146, 113);
+            this.txtMiddlename.Name = "txtMiddlename";
+            this.txtMiddlename.PlaceholderText = "";
+            this.txtMiddlename.SelectedText = "";
+            this.txtMiddlename.Size = new System.Drawing.Size(171, 36);
+            this.txtMiddlename.TabIndex = 1;
             // 
             // label7
             // 
@@ -904,7 +903,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(9, 181);
+            this.label4.Location = new System.Drawing.Point(9, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 21);
             this.label4.TabIndex = 61;
@@ -924,7 +923,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(9, 128);
+            this.label2.Location = new System.Drawing.Point(9, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 21);
             this.label2.TabIndex = 57;
@@ -967,12 +966,12 @@
             this.txtLastname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname.ForeColor = System.Drawing.Color.Black;
             this.txtLastname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastname.Location = new System.Drawing.Point(146, 114);
+            this.txtLastname.Location = new System.Drawing.Point(146, 170);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.PlaceholderText = "";
             this.txtLastname.SelectedText = "";
             this.txtLastname.Size = new System.Drawing.Size(171, 36);
-            this.txtLastname.TabIndex = 1;
+            this.txtLastname.TabIndex = 2;
             // 
             // guna2GroupBox2
             // 
@@ -1211,7 +1210,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(1062, 536);
+            this.ClientSize = new System.Drawing.Size(1062, 670);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.guna2Panel1);
@@ -1271,13 +1270,12 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2TextBox txtSuffix;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2TextBox txtMothername;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txtBirthplace;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox TxtMiddlename;
+        private Guna.UI2.WinForms.Guna2TextBox txtMiddlename;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -1306,5 +1304,6 @@
         private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2TextBox txtMember;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSuffix;
     }
 }

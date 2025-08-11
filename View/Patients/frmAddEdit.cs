@@ -22,8 +22,8 @@ namespace capstone_project.View
             {
                 txtLastname.Text = Model.Patients.Lname;
                 txtFirstname.Text = Model.Patients.Fname;
-                TxtMiddlename.Text = Model.Patients.Mname;
-                txtSuffix.Text = Model.Patients.Suffix;
+                txtMiddlename.Text = Model.Patients.Mname;
+                cmbSuffix.Text = Model.Patients.Suffix;
                 cmbSex.Text = Model.Patients.Sex;
                 dtpBirthdate.Value = Model.Patients.Birthdate;
                 txtBirthplace.Text = Model.Patients.Birthplace;
@@ -54,8 +54,8 @@ namespace capstone_project.View
         {
             Model.Patients.Lname = txtLastname.Text;
             Model.Patients.Fname = txtFirstname.Text;
-            Model.Patients.Mname = TxtMiddlename.Text;
-            Model.Patients.Suffix = txtSuffix.Text;
+            Model.Patients.Mname = txtMiddlename.Text;
+            Model.Patients.Suffix = cmbSuffix.Text;
             Model.Patients.Sex = cmbSex.Text;
             Model.Patients.Birthdate = dtpBirthdate.Value;
             Model.Patients.Birthplace = txtBirthplace.Text;

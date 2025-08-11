@@ -52,3 +52,5 @@ C:\Users\Djit\source\repos\capstone_project\bin\Debug\DevComponents.DotNetBar.Sc
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.ucPatient.resources
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Patients.ucViewPatient.resources
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Doctors.ucDoctors.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Doctors.frmAddEdit.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Patients.Form1.resources

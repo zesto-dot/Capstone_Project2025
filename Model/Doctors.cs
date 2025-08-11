@@ -10,6 +10,15 @@ namespace capstone_project.Model
 {
     public class Doctors
     {
+        public static int ID { get; set; }
+        public static string Lname { get; set; }
+        public static string Fname { get; set; }
+        public static string Mname { get; set; }
+        public static string Sex { get; set; }
+        public static string ContactNumber { get; set; }
+        public static string SpecializationID { get; set; }
+        public static DateTime Created_At { get; set; }
+
         public static void UI(Panel p)
         {
             Controller.Service.ShowUC(new View.Doctors.ucDoctors(), p);
@@ -19,10 +28,9 @@ namespace capstone_project.Model
             d.Columns[0].Visible = false;
             d.Columns[1].HeaderText = "Full Name";
             d.Columns[2].HeaderText = "Sex";
-            d.Columns[3].HeaderText = "Address";
-            d.Columns[4].HeaderText = "Contact Number";
-            d.Columns[5].HeaderText = "Specialization";
-            d.Columns[6].HeaderText = "Created_At";
+            d.Columns[3].HeaderText = "Contact Number";
+            d.Columns[4].HeaderText = "Specialization";
+            d.Columns[5].HeaderText = "Created_At";
 
         }
         public static void Load(DataGridView d)
@@ -32,6 +40,31 @@ namespace capstone_project.Model
             dt.Dispose();
             FixGrid(d);
         }
+        public static void Add()
+        {
+            Controller.Service.ShowForm(new View.Doctors.frmAddEdit());
+
+        }
+        public static void Edit()
+        {
+            Controller.Service.ShowForm(new View.Doctors.frmAddEdit());
+
+        }
+
+
+        public static void Delete(DataGridView d)
+        {
+            Controller.MySQL.Push("delete from doctors where ID =" + ID + "");
+            Load(d);
+        }
+        public static void Save()
+        {
+
+            Controller.MySQL.Push("insert into doctors set Lname ='" + Lname + "',Fname='" + Fname + "',Mname='" + Mname + "', Sex='" + Sex + "', ContactNumber='" + ContactNumber + "',SpecializationID='" + SpecializationID + "',Created_At='" + Created_At.ToString("yyyy-MM-dd") + "'");
+
+            
+        }
+       
     }
 
 }
