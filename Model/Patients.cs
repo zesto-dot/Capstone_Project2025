@@ -53,8 +53,8 @@ namespace capstone_project.Model
         public static void Load(DataGridView d,Guna2TextBox t)
         {
 
-            string searchstring = Controller.Service.EscapeQuote(t.Text);
-            var dt = Controller.MySQL.Pull("SELECT * FROM `v.patients` where FullName like '%" +searchstring + "%'") as IDisposable;
+            
+            var dt = Controller.MySQL.Pull("SELECT `patients`.`ID` AS `ID`, CONCAT(UPPER(LEFT(`patients`.`Fname`, 1)), LOWER(SUBSTR(`patients`.`Fname`, 2)), ' ', UPPER(LEFT(`patients`.`Mname`, 1)), '. ', UPPER(LEFT(`patients`.`Lname`, 1)), LOWER(SUBSTR(`patients`.`Lname`, 2)), ' ', UPPER(LEFT(`patients`.`Suffix`, 1)), LOWER(SUBSTR(`patients`.`Suffix`, 2))) AS `FullName`, `patients`.`Sex` AS `Sex`, `patients`.`Birthdate` AS `Birthdate`, `patients`.`Bloodtype` AS `Bloodtype`, `patients`.`Address` AS `Address`, `patients`.`ContactNumber` AS `ContactNumber`, `patients`.`Created_At` AS `Created_At` FROM `patients`") as IDisposable;
             d.DataSource = dt;
             dt.Dispose();
             FixGrid(d);
@@ -65,7 +65,7 @@ namespace capstone_project.Model
             d.Columns[2].Visible = false;
             d.Columns[3].HeaderText = "Full Name";
             d.Columns[4].HeaderText = "Sex";
-            d.Columns[5].HeaderText = "Age";
+            d.Columns[5].HeaderText = "Birth Date";
             d.Columns[6].HeaderText = "Blood Type";
             d.Columns[7].HeaderText = "Address";
             d.Columns[8].HeaderText = "Contact Number";
@@ -171,6 +171,12 @@ namespace capstone_project.Model
             }
 
         }
+
+        public static void Back(Panel p)
+        {
+            Controller.Service.ShowUC(new View.ucPatient(), p);
+        }
+
         public static void Delete(DataGridView d, Guna2TextBox t)
         {
             Controller.MySQL.Push("delete from patients where ID =" + ID + "");
@@ -187,6 +193,42 @@ namespace capstone_project.Model
         public static void Update()
         {
             Controller.MySQL.Push("UPDATE patients SET " + "Lname='" + Lname + "', " + "Fname='" + Fname + "', " + "Mname='" + Mname + "', " + "Suffix='" + Suffix + "', " + "Sex='" + Sex + "', " + "Birthdate='" + Birthdate.ToString("yyyy-MM-dd") + "', " + "Birthplace='" + Birthplace + "', " + "Bloodtype='" + Bloodtype + "', " + "Address='" + Address + "', " + "ContactNumber='" + ContactNumber + "', " + "CivilStatus='" + CivilStatus + "', " + "SpouseName='" + SpouseName + "', " + "MotherName='" + MotherName + "', " + "EducationalAttainment='" + EducationalAttainment + "', " + "EmploymentStatus='" + EmploymentStatus + "', " + "FamilyPosition='" + FamilyPosition + "', " + "Dswd_Nhts=" + (Dswd_Nhts ? 1 : 0) + ", " + "FacilityHouseHoldNo='" + FacilityHouseHoldNo + "', " + "FourPsMember=" + (FourPsMember ? 1 : 0) + ", " + "HouseHoldNo='" + HouseHoldno + "', " + "PhilHealthMember=" + (PhilHealthMember ? 1 : 0) + ", " + "PhilHealthType='" + PhilHealthType + "', " + "PhilHealthNo='" + PhilHealthNo + "', " + "IfMember='" + IfMember + "', " + "PcbMember=" + (PcbMember ? 1 : 0) + " " + "WHERE ID=" + ID);
+        }
+
+        public static int Age
+        {
+            get
+            {
+                if (Birthdate == default(DateTime)) return 0;   // guard if not set
+                var today = DateTime.Today;
+                var age = today.Year - Birthdate.Year;
+                if (Birthdate.Date > today.AddYears(-age)) age--;  // birthday not yet this year
+                return Math.Max(age, 0);
+            }
+        }
+        public static void cmbCity(ComboBox c)
+        {
+            DataTable dt = Controller.MySQL.Pull("SELECT ID, Name FROM services");
+            c.DataSource = dt;
+            c.DisplayMember = "Name";
+            c.ValueMember = "ID";
+
+        }
+        public static void LoadProvinces(ComboBox c)
+        {
+            DataTable dt = Controller.MySQL.Pull("SELECT ID, Province FROM province");
+            c.DataSource = dt;
+            c.DisplayMember = "Province";
+            c.ValueMember = "ID";
+
+        }
+        public static void cmbBarangay(ComboBox c)
+        {
+            DataTable dt = Controller.MySQL.Pull("SELECT ID, Name FROM services");
+            c.DataSource = dt;
+            c.DisplayMember = "Name";
+            c.ValueMember = "ID";
+
         }
     }
 }

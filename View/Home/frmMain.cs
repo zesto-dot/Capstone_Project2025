@@ -36,5 +36,16 @@ namespace capstone_project.View
         {
             Model.Doctors.UI(guna2Panel1);
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            Model.Settings.UI(guna2Panel1);
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

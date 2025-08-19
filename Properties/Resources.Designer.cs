@@ -113,6 +113,16 @@ namespace capstone_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_button {
+            get {
+                object obj = ResourceManager.GetObject("back-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashboard {
             get {
                 object obj = ResourceManager.GetObject("dashboard", resourceCulture);
@@ -166,6 +176,16 @@ namespace capstone_project.Properties {
         internal static System.Drawing.Bitmap doctor1 {
             get {
                 object obj = ResourceManager.GetObject("doctor1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit {
+            get {
+                object obj = ResourceManager.GetObject("Edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +273,16 @@ namespace capstone_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settings {
+            get {
+                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SolanaLogo {
             get {
                 object obj = ResourceManager.GetObject("SolanaLogo", resourceCulture);
@@ -286,6 +316,16 @@ namespace capstone_project.Properties {
         internal static System.Drawing.Bitmap user__1_ {
             get {
                 object obj = ResourceManager.GetObject("user (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view__3_ {
+            get {
+                object obj = ResourceManager.GetObject("view (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

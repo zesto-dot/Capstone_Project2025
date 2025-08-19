@@ -12,9 +12,28 @@ namespace capstone_project.View.Doctors
 {
     public partial class frmAddEdit : Form
     {
-        public frmAddEdit()
+        private bool isEdit = false;
+        public frmAddEdit(bool edit = false)
         {
             InitializeComponent();
+            isEdit = edit;
+            if (isEdit)
+            {
+                txtLastname.Text = Model.Doctors.Lname;
+                txtFirstname.Text = Model.Doctors.Fname;
+                TxtMiddlename.Text = Model.Doctors.Mname;
+                
+                cmbSex.Text = Model.Doctors.Sex;
+                
+                txtContactnumber.Text = Model.Doctors.ContactNumber;
+                
+                cmbSpecialization.SelectedValue = Model.Doctors.SpecializationID;
+
+                
+
+                lblText.Text = "Edit Doctor";
+            }
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -24,10 +43,23 @@ namespace capstone_project.View.Doctors
             Model.Doctors.Mname = TxtMiddlename.Text;
             Model.Doctors.Sex = cmbSex.Text;
             Model.Doctors.ContactNumber = txtContactnumber.Text;
-            Model.Doctors.SpecializationID = cmbSpecialization.Text;
+            Model.Doctors.SpecializationID = Convert.ToInt32(cmbSpecialization.SelectedValue);
             Model.Doctors.Created_At = DateTime.Now;
-            Model.Doctors.Save();
+
+            if (isEdit)
+                Model.Doctors.Update();
+            else
+                Model.Doctors.Save();
             this.Dispose();
         }
+
+        private void frmAddEdit_Load(object sender, EventArgs e)
+        {
+            Model.Specialization.Cmb(cmbSpecialization);
+        }
+
+       
     }
-}
+
+       
+    }

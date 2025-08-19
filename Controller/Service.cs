@@ -9,6 +9,7 @@ namespace capstone_project.Controller
 {
     public class Service
     {
+        
         public static void ShowUC(UserControl x, Panel y)
         {
             y.Controls.Clear();

@@ -120,8 +120,15 @@
     <Compile Include="Controller\MySQL.cs" />
     <Compile Include="Controller\Service.cs" />
     <Compile Include="Controller\Users.cs" />
+    <Compile Include="Model\Diagnosis.cs" />
     <Compile Include="Model\Doctors.cs" />
+    <Compile Include="Model\Laboratory.cs" />
+    <Compile Include="Model\Medicine.cs" />
+    <Compile Include="Model\PatientRecord.cs" />
     <Compile Include="Model\Patients.cs" />
+    <Compile Include="Model\Services.cs" />
+    <Compile Include="Model\Settings.cs" />
+    <Compile Include="Model\Specialization.cs" />
     <Compile Include="Model\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,17 +137,65 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\Backup\frmRecordAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Backup\frmRecordAddEdit.Designer.cs">
+      <DependentUpon>frmRecordAddEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Doctors\frmAddEdit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Doctors\frmAddEdit.Designer.cs">
       <DependentUpon>frmAddEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Doctors\frmSpecializationAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Doctors\frmSpecializationAddEdit.Designer.cs">
+      <DependentUpon>frmSpecializationAddEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Doctors\ucDoctors.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View\Doctors\ucDoctors.Designer.cs">
       <DependentUpon>ucDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Doctors\ucSpecialization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Doctors\ucSpecialization.Designer.cs">
+      <DependentUpon>ucSpecialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterFiles\Diagnosis\ucDiagnosis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MasterFiles\Diagnosis\ucDiagnosis.Designer.cs">
+      <DependentUpon>ucDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterFiles\Laboratory\frmAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MasterFiles\Laboratory\frmAddEdit.Designer.cs">
+      <DependentUpon>frmAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterFiles\Laboratory\ucLaboratory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MasterFiles\Laboratory\ucLaboratory.Designer.cs">
+      <DependentUpon>ucLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterFiles\Medicine\frmAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MasterFiles\Medicine\frmAddEdit.Designer.cs">
+      <DependentUpon>frmAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterFiles\Medicine\ucMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MasterFiles\Medicine\ucMedicine.Designer.cs">
+      <DependentUpon>ucMedicine.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Patients\Form1.cs">
       <SubType>Form</SubType>
@@ -166,6 +221,12 @@
     <Compile Include="View\Home\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Patients\frmRecordAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Patients\frmRecordAddEdit.Designer.cs">
+      <DependentUpon>frmRecordAddEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Patients\ucPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,16 +239,70 @@
     <Compile Include="View\Patients\ucViewPatient.Designer.cs">
       <DependentUpon>ucViewPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Services\frmAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Services\frmAddEdit.Designer.cs">
+      <DependentUpon>frmAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Services\ucServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Services\ucServices.Designer.cs">
+      <DependentUpon>ucServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\ucSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Settings\ucSettings.Designer.cs">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\testform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\testform.Designer.cs">
+      <DependentUpon>testform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\testtest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\testtest.Designer.cs">
+      <DependentUpon>testtest.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Backup\frmRecordAddEdit.resx">
+      <DependentUpon>frmRecordAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Doctors\frmAddEdit.resx">
       <DependentUpon>frmAddEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Doctors\frmSpecializationAddEdit.resx">
+      <DependentUpon>frmSpecializationAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Doctors\ucDoctors.resx">
       <DependentUpon>ucDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Doctors\ucSpecialization.resx">
+      <DependentUpon>ucSpecialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterFiles\Diagnosis\ucDiagnosis.resx">
+      <DependentUpon>ucDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterFiles\Laboratory\frmAddEdit.resx">
+      <DependentUpon>frmAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterFiles\Laboratory\ucLaboratory.resx">
+      <DependentUpon>ucLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterFiles\Medicine\frmAddEdit.resx">
+      <DependentUpon>frmAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterFiles\Medicine\ucMedicine.resx">
+      <DependentUpon>ucMedicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Patients\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -201,11 +316,29 @@
     <EmbeddedResource Include="View\Home\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Patients\frmRecordAddEdit.resx">
+      <DependentUpon>frmRecordAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Patients\ucPatient.resx">
       <DependentUpon>ucPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Patients\ucViewPatient.resx">
       <DependentUpon>ucViewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Services\frmAddEdit.resx">
+      <DependentUpon>frmAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Services\ucServices.resx">
+      <DependentUpon>ucServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Settings\ucSettings.resx">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\testform.resx">
+      <DependentUpon>testform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\testtest.resx">
+      <DependentUpon>testtest.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -222,9 +355,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="View\Services\" />
+    <Folder Include="View\MasterFiles\Services\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\view %283%29.png" />
     <None Include="Resources\user %281%29.png" />
     <None Include="Resources\SolanaLogo2.png" />
     <None Include="Resources\SolanaLogo1.png" />
@@ -246,6 +380,9 @@
     <None Include="Resources\search.png" />
     <None Include="Resources\delete.png" />
     <None Include="Resources\delete %281%29.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\back-button.png" />
     <Content Include="Resources\SolanaLogo.png" />
     <None Include="Resources\patient.png" />
     <None Include="Resources\dashboard.png" />

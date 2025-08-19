@@ -31,21 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblText = new System.Windows.Forms.Label();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbSpecialization = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtContactnumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cmbSex = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.TxtMiddlename = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFirstname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtLastname = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtContactnumber = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cmbSex = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbSpecialization = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.lblText = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,25 +79,113 @@
             this.guna2Panel1.Size = new System.Drawing.Size(737, 262);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // lblText
+            // btnSave
             // 
-            this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.lblText.Location = new System.Drawing.Point(3, 7);
-            this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(128, 30);
-            this.lblText.TabIndex = 27;
-            this.lblText.Text = "Add Doctor";
+            this.btnSave.AutoRoundedCorners = true;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(554, 204);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(180, 45);
+            this.btnSave.TabIndex = 107;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // guna2ControlBox1
+            // cmbSpecialization
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(676, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(58, 44);
-            this.guna2ControlBox1.TabIndex = 28;
+            this.cmbSpecialization.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSpecialization.BorderColor = System.Drawing.Color.Black;
+            this.cmbSpecialization.BorderRadius = 10;
+            this.cmbSpecialization.BorderThickness = 2;
+            this.cmbSpecialization.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSpecialization.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSpecialization.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSpecialization.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSpecialization.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbSpecialization.ForeColor = System.Drawing.Color.Black;
+            this.cmbSpecialization.ItemHeight = 30;
+            this.cmbSpecialization.Location = new System.Drawing.Point(505, 70);
+            this.cmbSpecialization.Name = "cmbSpecialization";
+            this.cmbSpecialization.Size = new System.Drawing.Size(171, 36);
+            this.cmbSpecialization.TabIndex = 95;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(385, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 21);
+            this.label1.TabIndex = 94;
+            this.label1.Text = "Specialization:";
+            // 
+            // txtContactnumber
+            // 
+            this.txtContactnumber.BorderColor = System.Drawing.Color.Black;
+            this.txtContactnumber.BorderRadius = 10;
+            this.txtContactnumber.BorderThickness = 2;
+            this.txtContactnumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContactnumber.DefaultText = "";
+            this.txtContactnumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContactnumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtContactnumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContactnumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContactnumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.txtContactnumber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactnumber.ForeColor = System.Drawing.Color.Black;
+            this.txtContactnumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContactnumber.Location = new System.Drawing.Point(505, 122);
+            this.txtContactnumber.Name = "txtContactnumber";
+            this.txtContactnumber.PlaceholderText = "";
+            this.txtContactnumber.SelectedText = "";
+            this.txtContactnumber.Size = new System.Drawing.Size(171, 36);
+            this.txtContactnumber.TabIndex = 91;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label23.Location = new System.Drawing.Point(385, 117);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(75, 42);
+            this.label23.TabIndex = 93;
+            this.label23.Text = "Contact\r\nNumber:";
+            // 
+            // cmbSex
+            // 
+            this.cmbSex.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSex.BorderColor = System.Drawing.Color.Black;
+            this.cmbSex.BorderRadius = 10;
+            this.cmbSex.BorderThickness = 2;
+            this.cmbSex.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSex.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
+            this.cmbSex.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbSex.ForeColor = System.Drawing.Color.Black;
+            this.cmbSex.ItemHeight = 30;
+            this.cmbSex.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbSex.Location = new System.Drawing.Point(505, 17);
+            this.cmbSex.Name = "cmbSex";
+            this.cmbSex.Size = new System.Drawing.Size(171, 36);
+            this.cmbSex.TabIndex = 90;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(385, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 21);
+            this.label6.TabIndex = 92;
+            this.label6.Text = "Sex:";
             // 
             // TxtMiddlename
             // 
@@ -195,115 +283,25 @@
             this.txtLastname.Size = new System.Drawing.Size(171, 36);
             this.txtLastname.TabIndex = 63;
             // 
-            // txtContactnumber
+            // lblText
             // 
-            this.txtContactnumber.BorderColor = System.Drawing.Color.Black;
-            this.txtContactnumber.BorderRadius = 10;
-            this.txtContactnumber.BorderThickness = 2;
-            this.txtContactnumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContactnumber.DefaultText = "";
-            this.txtContactnumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtContactnumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtContactnumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtContactnumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtContactnumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.txtContactnumber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContactnumber.ForeColor = System.Drawing.Color.Black;
-            this.txtContactnumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContactnumber.Location = new System.Drawing.Point(505, 122);
-            this.txtContactnumber.Name = "txtContactnumber";
-            this.txtContactnumber.PlaceholderText = "";
-            this.txtContactnumber.SelectedText = "";
-            this.txtContactnumber.Size = new System.Drawing.Size(171, 36);
-            this.txtContactnumber.TabIndex = 91;
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+            this.lblText.Location = new System.Drawing.Point(3, 7);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(128, 30);
+            this.lblText.TabIndex = 27;
+            this.lblText.Text = "Add Doctor";
             // 
-            // label23
+            // guna2ControlBox1
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label23.Location = new System.Drawing.Point(385, 117);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(75, 42);
-            this.label23.TabIndex = 93;
-            this.label23.Text = "Contact\r\nNumber:";
-            // 
-            // cmbSex
-            // 
-            this.cmbSex.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSex.BorderColor = System.Drawing.Color.Black;
-            this.cmbSex.BorderRadius = 10;
-            this.cmbSex.BorderThickness = 2;
-            this.cmbSex.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSex.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.cmbSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.cmbSex.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.cmbSex.ForeColor = System.Drawing.Color.Black;
-            this.cmbSex.ItemHeight = 30;
-            this.cmbSex.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbSex.Location = new System.Drawing.Point(505, 17);
-            this.cmbSex.Name = "cmbSex";
-            this.cmbSex.Size = new System.Drawing.Size(171, 36);
-            this.cmbSex.TabIndex = 90;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(385, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 21);
-            this.label6.TabIndex = 92;
-            this.label6.Text = "Sex:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(385, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 21);
-            this.label1.TabIndex = 94;
-            this.label1.Text = "Specialization:";
-            // 
-            // cmbSpecialization
-            // 
-            this.cmbSpecialization.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSpecialization.BorderColor = System.Drawing.Color.Black;
-            this.cmbSpecialization.BorderRadius = 10;
-            this.cmbSpecialization.BorderThickness = 2;
-            this.cmbSpecialization.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSpecialization.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSpecialization.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.cmbSpecialization.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.cmbSpecialization.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.cmbSpecialization.ForeColor = System.Drawing.Color.Black;
-            this.cmbSpecialization.ItemHeight = 30;
-            this.cmbSpecialization.Items.AddRange(new object[] {
-            "test"});
-            this.cmbSpecialization.Location = new System.Drawing.Point(505, 70);
-            this.cmbSpecialization.Name = "cmbSpecialization";
-            this.cmbSpecialization.Size = new System.Drawing.Size(171, 36);
-            this.cmbSpecialization.TabIndex = 95;
-            // 
-            // btnSave
-            // 
-            this.btnSave.AutoRoundedCorners = true;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(192)))), ((int)(((byte)(55)))));
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(554, 204);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(180, 45);
-            this.btnSave.TabIndex = 107;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(676, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(58, 44);
+            this.guna2ControlBox1.TabIndex = 28;
             // 
             // frmAddEdit
             // 
@@ -318,6 +316,7 @@
             this.Name = "frmAddEdit";
             this.Padding = new System.Windows.Forms.Padding(0, 44, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frmAddEdit_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);

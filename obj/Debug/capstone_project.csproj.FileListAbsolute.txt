@@ -54,3 +54,17 @@ C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Pati
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Doctors.ucDoctors.resources
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Doctors.frmAddEdit.resources
 C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Patients.Form1.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Services.ucServices.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Patients.frmRecordAddEdit.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Settings.ucSettings.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Services.frmAddEdit.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Doctors.ucSpecialization.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Doctors.frmSpecializationAddEdit.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.MasterFiles.Diagnosis.ucDiagnosis.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.MasterFiles.Laboratory.ucLaboratory.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.MasterFiles.Medicine.ucMedicine.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.testform.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.Backup.frmRecordAddEdit.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.testtest.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.MasterFiles.Laboratory.frmAddEdit.resources
+C:\Users\Djit\source\repos\capstone_project\obj\Debug\capstone_project.View.MasterFiles.Medicine.frmAddEdit.resources
